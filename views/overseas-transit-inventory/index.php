@@ -1,0 +1,89 @@
+<?php
+
+use yii\helpers\Html;
+use kartik\grid\GridView;
+use yii\widgets\Pjax;
+/* @var $this yii\web\View */
+/* @var $searchModel app\models\OverseasWarehouseGoodsTaxRebateSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+
+$this->title = Yii::t('app', '海外仓库存');
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="overseas-warehouse-goods-tax-rebate-index">
+
+    <h1><?php // Html::encode($this->title) ?></h1>
+    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+
+    <p>
+        <?php Html::a(Yii::t('app', 'Create Tax Rebate'), ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
+
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
+        'pager'=>[
+            //'options'=>['class'=>'hidden']//关闭分页
+            'firstPageLabel'=>"首页",
+            'prevPageLabel'=>'上一页',
+            'nextPageLabel'=>'下一页',
+            'lastPageLabel'=>'末页',
+        ],
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            'sku',
+            'stock',
+            'on_way_stock',
+            'available_stock',
+            [
+
+                'attribute' => 'warehouse_code',
+                "format" => "raw",
+                'value'=>
+                    function($model){
+
+                        $data = !empty($model->warehouse_code)?\app\services\BaseServices::getWarehouseCode($model->warehouse_code):"";
+                        $data = !empty($model->warehouse_code)?$model->warehouse_code:"";
+                        return $data;
+                    },
+            ],
+                'left_stock',
+            'created_at',
+
+
+            [
+                'header'=>'操作',
+                'class' => 'yii\grid\ActionColumn',
+                'template'=>'{update}',
+                'buttons'=>[],
+            ],
+        ],
+
+        'containerOptions' => ["style"=>"overflow:auto"], // only set when $responsive = false
+        'toolbar' =>  [
+
+            //'{export}',
+        ],
+
+        'pjax' => true,
+        'bordered' => true,
+        'striped' => false,
+        'condensed' => true,
+        'responsive' => true,
+        'hover' => true,
+        'floatHeader' => false,
+        'showPageSummary' => false,
+
+        'exportConfig' => [
+            GridView::EXCEL => [],
+        ],
+        'panel' => [
+            //'heading'=>'<h3 class="panel-title"><i class="glyphicon glyphicon-globe"></i> Countries</h3>',
+            'type'=>'success',
+            // 'after'=>Html::a('<i class="glyphicon glyphicon-repeat"></i> 刷新', ['index'], ['class' => 'btn btn-info']),
+            //'footer'=>true
+        ],
+
+    ]); ?>
+</div>

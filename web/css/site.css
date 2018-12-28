@@ -1,0 +1,250 @@
+html,
+body {
+    height: 100%;
+}
+
+p{
+    margin: 0;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+.modal-lg12 {
+    width: 1200px;
+}
+.empty {
+    margin: 0 auto;
+    width: 200px;
+    color: #bbb;
+}
+
+.label {
+    margin: 0 2px 2px 0;
+}
+
+.pay-notice {
+    margin-left: 30px;
+    margin-top: 180px;
+}
+
+
+.my-box{padding:10px;}
+.fg{padding:5px;}
+.fg label{display:inline-block;width:100px;text-align: right; margin-right: 15px;}
+
+
+.my-table{
+    border-collapse: collapse;
+    border: 1px solid #aaa;
+    width: 100%;
+}
+
+.my-table th{
+    vertical-align: baseline;
+    padding: 5px 15px 5px 6px;
+    background-color: #ccc;
+    border: 1px solid #3F3F3F;
+    text-align: left;
+}
+
+.my-table td {
+    vertical-align: text-top;
+    padding: 6px 15px 6px 6px;
+    border: 1px solid #9E9E9E;
+}
+
+.my-table2 {
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    width: 756px;
+}
+
+.my-table2 td {
+    padding: 6px 15px 6px 6px;
+    border: 1px solid #607D8B;
+}
+
+.my-table2 th {
+    vertical-align: baseline;
+    padding: 5px 15px 5px 6px;
+    border: 1px solid #3F3F3F;
+    text-align: center;
+    font-weight: bold;
+}
+
+.my-table2 input {
+     width: 100%;
+ }
+
+.my-table2 .bg {
+    background-color: #ccc;
+}
+
+.img-list
+{
+    list-style: none;
+}
+.img-list li {
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.img-list .icon {
+    width: 160px;
+    height: 116px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    border: 0;
+    background-repeat: no-repeat;
+}
+.img-list p {
+    text-align: center;
+    display: block;
+    background-color: #607D8B;
+    padding: 3px;
+    color: #fff;
+}
+.img-list li.selected .icon {
+    background-image: url(../images/success.png);
+    background-position: 120px 50px;
+}
+.thum
+{
+    width: 180px;
+    height: 200px;
+}
+.text_line
+{
+    clear: both;
+    margin-bottom: 2px;
+}
+
+.bg-line {
+    width: 50%;
+    height: 8px;
+    background-color: #3c8dbc;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+div.no, div.no span {
+    background-color: #ccc;
+}
+.bg-line span {
+    width: 50px;
+    height: 30px;
+    background-color: #3c8dbc;
+    color: #fff;
+    position: absolute;
+    top: -15px;
+    border-radius: 15px;
+    line-height: 30px;
+}
+.bg-line p {
+    position: absolute;
+    top: 20px;
+    left: 48%;
+}
+
+/*跨境宝供应商标记样式*/
+.su_cross_border{
+    padding: 1px 2px 1px 2px;
+    font-size: 10px;
+    background: linear-gradient(#FAA629, #EFDCC1);
+}
+

@@ -1,0 +1,16 @@
+
+
+
+insert into pur_menu(`name`,`route`,`order`) values('锁仓配置','/lock-warehouse-config/index',1);
+
+
+
+CREATE TABLE `pur_lock_warehouse_config` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sku` varchar(30) NOT NULL COMMENT '产品SKU',
+  `warehouse_code` varchar(30) NOT NULL COMMENT '仓库编码',
+  `create_user` varchar(255) DEFAULT '' COMMENT '创建人',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `is_lock` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否锁定(0否1是)',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='锁仓配置表';

@@ -1,0 +1,30 @@
+body {
+    height: 100%;
+}
+.my-table2 {
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    width: 756px;
+}
+
+.my-table2 td {
+    padding: 6px 15px 6px 6px;
+    border: 1px solid #607D8B;
+}
+
+.my-table2 th {
+    vertical-align: baseline;
+    padding: 5px 15px 5px 6px;
+    border: 1px solid #3F3F3F;
+    text-align: center;
+    font-weight: bold;
+}
+
+.my-table2 input {
+    width: 100%;
+}
+
+.my-table2 .bg {
+    background-color: #ccc;
+}

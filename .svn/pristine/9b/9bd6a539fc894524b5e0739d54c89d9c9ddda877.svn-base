@@ -1,0 +1,22 @@
+{
+	"name": "m35/thecsv",
+	"description": "yii2 csv export extension",
+	"license": "MIT",
+	"keywords": ["csv", "yii2", "yii", "export"],
+	"homepage": "https://github.com/13552277443/yii2-thecsv",
+	"type": "yii2-extension",
+	"authors": [
+		{
+			"name": "m35",
+			"email": "wsskoko@126.com",
+			"homepage": "https://github.com/13552277443/",
+			"role": "Creator"
+		}
+	],
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"m35\\thecsv\\": ""
+		}
+	}
+}

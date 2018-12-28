@@ -1,0 +1,8 @@
+ALTER TABLE pur_purchase_compact ADD y_corporate varchar(100) DEFAULT NULL COMMENT '乙方法人代表';
+ALTER TABLE pur_purchase_compact ADD j_email varchar(100) DEFAULT NULL COMMENT '甲方邮箱';
+ALTER TABLE pur_purchase_compact ADD y_email varchar(100) DEFAULT NULL COMMENT '乙方邮箱';
+ALTER TABLE pur_purchase_compact ADD baozhuang_require text COMMENT '包装要求';
+ALTER TABLE pur_purchase_compact ADD shouhou_clause text COMMENT '售后条款';
+ALTER TABLE pur_purchase_compact ADD buchong_clause text COMMENT '补充条款';
+ALTER TABLE pur_purchase_compact ADD djhuo_require text COMMENT '订货、交货要求';
+INSERT INTO pur_template(name,type,platform,status,style_code) VALUES('FBA仓订单合同-不含税', 'DDHT', 3, 1, 'HT-FBA-NOHS-01');

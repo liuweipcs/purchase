@@ -1,0 +1,8 @@
+CREATE TABLE `pur_purchase_order_breakage_main` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pur_number` varchar(100) DEFAULT NULL COMMENT '采购单号',
+  `freight` decimal(10,3) DEFAULT NULL COMMENT '运费',
+  `discount` decimal(10,3) DEFAULT NULL COMMENT '优惠额',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `pur_number` (`pur_number`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='采购订单报损记录-主信息';

@@ -1,0 +1,28 @@
+# pack-refs with: peeled 
+5ec06db710a0bb69b9d307ba6719a919f66b08f2 refs/tags/alpha
+8d1e133c6efaf013d84692673846824626b62843 refs/tags/3.2
+6ecefec7bf03a47c7de5df505cbc75dcc14a37a1 refs/tags/3.1
+ce1fa6ff088f4cb9db204830ed030e3ef46c26eb refs/tags/3.0
+f1711779ea3c19e334d9774d223a9682e693b31e refs/tags/2.7
+d29660bbb340aabb237c6f59a97b746f6de85292 refs/tags/2.6
+855c44852ce5be73eb112b9bcf1f5541e291093d refs/tags/2.5
+446d95649f36d3168ab9290c51d617d9d7d14b31 refs/tags/2.4
+a3333567cf67c12b85ff5f634579e5633c1350ec refs/tags/2.3
+99f828c8cc70602a5c9a7abc67591fdd6dfda889 refs/tags/2.2
+835875b0cc0bef1f12998c4c713494947b45cfcb refs/tags/2.1
+38e480aed9306c2325e4f543714418f1cad15331 refs/tags/2.0.0
+b1297aa7162a90c3a6abe11924e60e0a7ffd9c5f refs/tags/1.0.5
+0321ba2a80df69794612c55859d816110dd5764c refs/tags/1.0.4
+2908e58089c629e1e8e9856e54fc8d9afca5bdd5 refs/tags/1.0.3
+54217c5eaa62c407e0c2f0f1b45c7ebf70c501ff refs/tags/1.0.2
+0cd9ecf43a9fea290518bf39fafde899e19b54ad refs/tags/1.0.1
+0a7be3884a8d624a4acd98a1d35c0d716b8d1761 refs/tags/1.0.0-beta
+^bac22f6186083d05455ce0003855f2b8c706099b
+499c9fffad44c04b81bc68578e58c193811354af refs/tags/1.0.0-RC
+6b4804dd297a1ee314bf70ce800b4060e806fb2e refs/tags/1.0.0
+ccaf0cc19e518a522d236aeb6b4ace7ee34f391e refs/remotes/origin/master-experiment
+624338912074ce7c218f838a940fbfed05ae47db refs/remotes/origin/master
+99b66d69193e4b55238c4ffe2cc4b1dd6e3b4823 refs/remotes/origin/for-code-testing
+393c1f0622b12e0a9adb0fc10d26d8aa4289d23c refs/remotes/origin/3.master
+835875b0cc0bef1f12998c4c713494947b45cfcb refs/remotes/origin/2.master
+b1f172c01367843c9dcd664fb54d1694c25601f6 refs/remotes/origin/1.0.master
